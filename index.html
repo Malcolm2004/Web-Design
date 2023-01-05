@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="jquery-3.6.3.min.js"></script>
+    <script>
+   function openPage(pageName, elmnt, color) {
+  
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].style.backgroundColor = "";
+  }
+
+  document.getElementById(pageName).style.display = "block";
+
+  elmnt.style.backgroundColor = color;
+}
+
+document.getElementById("defaultOpen").click();
+    </script>
+    <script>
+    <div class="alert">
+      <span class="alert" onclick="this.parentElement.style.display='none';"></span>
+      You are logged in
+    </div>
+  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+    <button class="tablink" onclick="openPage('Home', this, 'lightslategrey')">Home</button>
+    <button class="tablink" onclick="openPage('Login', this, 'lightslategrey')">Login</button>
+    <button class="tablink" onclick="openPage('Register', this, 'lightslategrey')">Register</button>
+    <button class="tablink" onclick="openPage('About', this, 'lightslategrey')">About us</button>
+    <button class="tablink" onclick="openPage('Contact', this, 'lightslategrey')">Contact us</button>
+    
+    <div id="Home" class="tabcontent">
+      <p>Welcome to our Home page!</p>
+      <button id="Roulette" onclick="window.open('https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/en_US/games/switch/r/roulette-switch/hero')">Roulette</button>
+      <button id="Slotomania" onclick="window.open('https://avatars.mds.yandex.net/get-games/1890793/2a0000017e87a0aefb4775947db10024c16e/orig')">Slotomania</button>
+      <button id="Blackjack" onclick="window.open('https://www.telegraph.co.uk/content/dam/betting/Better-Collective/cards-blackjack-table-xlarge.jpg?imwidth=1200')">Blackjack</button><br><br>
+      <button id="Poker" onclick="window.open('https://www.sycuan.com/wp-content/uploads/2020/12/Ultimate-Texas-Holdem-2-scaled.jpg')">Poker</button>
+      <button id="Baccarat" onclick="window.open('https://www.bestuscasinos.org/app/uploads/2020/03/Baccarat.jpg')">Baccarat</button>
+      <button id="Slingo" onclick="window.open('https://play-lh.googleusercontent.com/-4rOOmytt26cja2EGXq7QZ7yNBOzOvS18wVYr2rAWphAS7qtY8Edtn4GPzZaLkvhubE=w526-h296-rw')">Slingo</button><br><br>
+      <button id="Craps" onclick="window.open('https://www.casinosbc.com/about-games/how-to-play/craps/_jcr_content/root/responsivegrid/column_control_822181370/par_0/image_copy_copy.coreimg.jpeg/1582579650093/tables-craps-cta-5050.jpeg')">Craps</button>
+      <button id="Texas" onclick="window.open('https://www.liveabout.com/thmb/9guJYsSNlPm1nN8QTUQSxGUusio=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-917034570-5ad2aea3642dca003605302b.jpg')">Texas hold 'em</button>
+      <button id="Video-Poker" onclick="window.open('https://www.gamblingsites.org/app/uploads/2019/11/Game-King-Poker-Machines-at-a-Casino-Video-Poker-Machines.jpg')">Video Poker</button>
+    </div>
+    
+    <div id="Login" class="tabcontent">
+      <form>
+        <label for="emailaddress"></label><br>
+        <input type="text" id="emailaddress" placeholder="Email or Phone number" name="name"><br>
+
+        <label for="Password"></label><br>
+        <input type="Password" id="Password" placeholder="Password" name="Password"><br>
+        </form>
+      <button type="button" id="loginbutton" onclick="alert('You are logged in')">Login</button>
+    </div>
+    
+    <div id="Register" class="tabcontent">
+
+      <form>
+        <label for="name"></label><br>
+        <input type="text" id="name" placeholder="Name" name="name"><br>
+
+        <label for="surname"></label><br>
+        <input type="text" id="surname" placeholder="Surname" name="surname"><br>
+
+        <label for="phonenumber"></label><br>
+        <input type="tel" id="phonenumber" placeholder="Phone Number" name="phonenumber"><br>
+
+        <label for="email"></label><br>
+        <input type="email" id="email" placeholder="Email address" name="email"><br>
+        <input type="submit" id="sign_in" value="Sign in">
+      </form>
+
+    </div>
+    
+    <div id="About" class="tabcontent">
+      <p>About us</p>
+    </div>
+
+    <div id="Contact" class="tabcontent">
+      <p>Contact us!</p>
+    </div>
+
+    <div class="jumbotron text-center">
+      <h1>My First Bootstrap Page</h1>
+      <p>Resize this responsive page to see the effect!</p> 
+    </div>
+      
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <h3>Column 1</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 2</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
+        <div class="col-sm-4">
+          <h3>Column 3</h3>        
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris...</p>
+        </div>
+      </div>
+    </div>
+
+
+</body>
+</html>
