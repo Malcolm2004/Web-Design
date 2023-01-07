@@ -14,21 +14,21 @@ body, html {
     font-size: 17px;
     width: 20%;
   }
-  
   .tablink:hover {
     background-color: black;
   }
-  
- 
   .tabcontent {
     color: white;
     display: none;
     padding: 100px 20px;
     height: 100%;
   }
-  
-  #Home {background-color: lightslategrey;}
-  #Login {background-color: lightslategrey;}
+  #Home {
+    background-color: lightslategrey;
+  }
+  #Login {
+    background-color: lightslategrey;
+  }
   #loginbutton{
     margin-left: 0%;
     margin-top: 24px;
@@ -53,10 +53,14 @@ body, html {
     cursor: pointer;
     background-color: ghostwhite;
   }
-  #About {background-color: lightslategrey;}
-  #Contact {background-color: lightslategrey;}
+  #About {
+    background-color: lightslategrey;
+  }
+  #Contact {
+    background-color: lightslategrey;
+}
   
-  #Roulette{
+  #Roulette {
     width: 13%;
     margin-left: 30%;
     margin-top: 9%;
@@ -65,7 +69,7 @@ body, html {
     color: black;
     cursor: pointer;
   }
-  #Slotomania{
+  #Slotomania {
     width: 13%;
     margin-left: 1%;
     font-size: 20px;
@@ -73,7 +77,7 @@ body, html {
     color: black;
     cursor: pointer;
   }
-  #Blackjack{
+  #Blackjack  {
     width: 13%;
     margin-left: 1%;
     font-size: 20px;
@@ -81,7 +85,7 @@ body, html {
     color: black;
     cursor: pointer;
   }
-  #Poker{
+  #Poker  {
     width: 13%;
     margin-left: 30%;
     font-size: 20px;
@@ -89,7 +93,7 @@ body, html {
     color: black;
     cursor: pointer;
   }
-  #Baccarat{
+  #Baccarat {
     width: 13%;
     margin-left: 1%;
     font-size: 20px;
@@ -97,7 +101,7 @@ body, html {
     color: black;
     cursor: pointer;
   }
-  #Slingo{
+  #Slingo {
     width: 13%;
     margin-left: 1%;
     font-size: 20px;
@@ -105,7 +109,7 @@ body, html {
     color: black;
     cursor: pointer;
   }
-  #Craps{
+  #Craps  {
     width: 13%;
     margin-left: 30%;
     font-size: 20px;
@@ -113,14 +117,14 @@ body, html {
     color: black;
     cursor: pointer;
   }
-  #Texas{
+  #Texas  {
     width: 13%;
     margin-left: 1%;
     font-size: 20px;
     background-color: red ;
     cursor: pointer;
   }
-  #Video-Poker{
+  #Video-Poker  {
     width: 13%;
     margin-left: 1%;
     font-size: 20px;
